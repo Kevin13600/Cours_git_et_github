@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Configuration Git */
 
 $ git config --global user.name "Prenom Nom"
@@ -49,7 +48,3 @@ $ git push -u origin main <== -u configure la branche locale pour suivre la bran
 $ git add index.html 
 $ git commit -m "Modification du titre H1"
 
-
-=======
-[README.txt](https://github.com/Kevin13600/OpenclassroomsProject/files/14371170/README.txt)
->>>>>>> ffdcb201fd9457bd7eaf0208bd56cc96cf773370
