@@ -90,4 +90,6 @@ $ git push origin nom_de_votre_branche
 
 - valider sur github dans pull request
 
+/* en cas d'erreur */
+
 
