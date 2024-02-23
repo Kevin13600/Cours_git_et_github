@@ -61,18 +61,19 @@ $ touch cagnotte.txt
 $ git add cagnotte.txt
 $ git commit -m "Réalisation de la partie cagnotte côté front end"
 $ git push -u origin cagnotte
-$ git checkout main <<>> Fusionner la branche necessite de ce repositionner sur la branche principal.
+ update-readme1
+$ git checkout main <== Fusionner la branche necessite de ce repositionner sur la branche principal.
 $ git merge cagnotte
 
 
 /* Cloner un projet sur la machine locale */
 
-<<>> Cliquer sur code pour obtenir l'URL
+ Cliquer sur code pour obtenir l'URL
 $ git clone https://github.com/user/example_repo.git 
 
 /* Mettre a jour un dépôt local */
 
- $ git pull origin main <<>> Cela mettra à jour votre branche locale main avec les dernières modifications de la branche main du dépôt distant origin.
+ $ git pull origin main <== Cela mettra à jour votre branche locale main avec les dernières modifications de la branche main du dépôt distant origin.
 
 
 /* Pull request */
@@ -91,5 +92,11 @@ $ git push origin nom_de_votre_branche
 - valider sur github dans pull request
 
 /* en cas d'erreur */
+
+$ git checkout main
+$ git merge cagnotte
+
+
+
 
 
