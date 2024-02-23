@@ -48,3 +48,46 @@ $ git push -u origin main <== -u configure la branche locale pour suivre la bran
 $ git add index.html 
 $ git commit -m "Modification du titre H1"
 
+/* Effectuer un renomage du repository */
+
+$ git remote set-url origin https://github.com/nouveau-nom-utilisateur/nouveau-nom-repo.git
+
+/* Créer une branche, la pousser et la fusionner avec la branche main */
+
+$ git branch <== Permet d'afficher la liste des branche.
+$ git branch cagnotte <== Permet de créer la branche cagnotte.
+$ git checkout cagnotte <== checkout permet de de switcher de branche.
+$ touch cagnotte.txt
+$ git add cagnotte.txt
+$ git commit -m "Réalisation de la partie cagnotte côté front end"
+$ git push -u origin cagnotte
+$ git checkout main <<>> Fusionner la branche necessite de ce repositionner sur la branche principal.
+$ git merge cagnotte
+
+
+/* Cloner un projet sur la machine locale */
+
+<<>> Cliquer sur code pour obtenir l'URL
+$ git clone https://github.com/user/example_repo.git 
+
+/* Mettre a jour un dépôt local */
+
+ $ git pull origin main <<>> Cela mettra à jour votre branche locale main avec les dernières modifications de la branche main du dépôt distant origin.
+
+
+/* Pull request */
+
+- Créer une branche : Créez une nouvelle branche locale où vous ferez les modifications pour votre pull request.
+
+$ git checkout -b nom_de_votre_branche
+
+- Effectuer les modifications : Faites les modifications nécessaires dans votre branche locale.
+- Commit des modifications : Une fois les modifications terminées, ajoutez et committez vos changements.
+
+$ git add "document"
+$ git commit -m "Description des modifications"
+$ git push origin nom_de_votre_branche
+
+- valider sur github dans pull request
+
+
