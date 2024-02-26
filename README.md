@@ -90,6 +90,27 @@ $ git push origin nom_de_votre_branche
 
 - valider sur github dans pull request
 
-/* en cas d'erreur */
+/* en cas d'erreur sur une modification de la branche principale */
 
+- Effectuer une remise :
 
+$ git status
+$ git stash
+$ git branch NouvelleBranch
+$ Git checkout Nouvellebranch
+$ git stash apply stash@{..}
+
+/* en cas d'erreur avec en plus un commit */
+
+$ git log <== Récuperer l'ID 
+$ git log commit
+git reset --hard HEAD^
+
+/* modifier message d'un commit */
+
+$ git commit --amend -m "Votre nouveau message de commit"
+
+/* j'ai oublier un fichier dans mon dernier commit */
+
+$ git add FichierOublie.txt
+¤ git commit --amend --no-edit
