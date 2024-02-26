@@ -72,7 +72,7 @@ $ git clone https://github.com/user/example_repo.git
 
 /* Mettre a jour un dépôt local */
 
- $ git pull origin main <<>> Cela mettra à jour votre branche locale main avec les dernières modifications de la branche main du dépôt distant origin.
+ $ git pull origin main <== Cela mettra à jour votre branche locale main avec les dernières modifications de la branche main du dépôt distant origin.
 
 
 /* Pull request */
@@ -114,3 +114,12 @@ $ git commit --amend -m "Votre nouveau message de commit"
 
 $ git add FichierOublie.txt
 ¤ git commit --amend --no-edit
+
+/* annuler un push */
+
+$ git revert HEAD^ <== sert à annuler des changements commités
+$ git reset HEAD <== permet d'annuler des changements non commités.
+
+/* les 3 types de réinitialisation de Git */
+
+
