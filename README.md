@@ -61,14 +61,13 @@ $ touch cagnotte.txt
 $ git add cagnotte.txt
 $ git commit -m "Réalisation de la partie cagnotte côté front end"
 $ git push -u origin cagnotte
- update-readme1
-$ git checkout main <== Fusionner la branche necessite de ce repositionner sur la branche principal.
+$ git checkout main <<>> Fusionner la branche necessite de ce repositionner sur la branche principal.
 $ git merge cagnotte
 
 
 /* Cloner un projet sur la machine locale */
 
- Cliquer sur code pour obtenir l'URL
+<<>> Cliquer sur code pour obtenir l'URL
 $ git clone https://github.com/user/example_repo.git 
 
 /* Mettre a jour un dépôt local */
@@ -91,12 +90,36 @@ $ git push origin nom_de_votre_branche
 
 - valider sur github dans pull request
 
-/* en cas d'erreur */
+/* en cas d'erreur sur une modification de la branche principale */
 
-$ git checkout main
-$ git merge cagnotte
+- Effectuer une remise :
 
+$ git status
+$ git stash
+$ git branch NouvelleBranch
+$ Git checkout Nouvellebranch
+$ git stash apply stash@{..}
 
+/* en cas d'erreur avec en plus un commit */
 
+$ git log <== Récuperer l'ID 
+$ git log commit
+git reset --hard HEAD^
+
+/* modifier message d'un commit */
+
+$ git commit --amend -m "Votre nouveau message de commit"
+
+/* j'ai oublier un fichier dans mon dernier commit */
+
+$ git add FichierOublie.txt
+¤ git commit --amend --no-edit
+
+/* annuler un push */
+
+$ git revert HEAD^ <== sert à annuler des changements commités
+$ git reset HEAD <== permet d'annuler des changements non commités.
+
+/* les 3 types de réinitialisation de Git */
 
 
